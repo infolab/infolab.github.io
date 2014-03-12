@@ -1,0 +1,14 @@
+{% for p in site.pages %}
+    {% if p.category and p.main != true %}
+        {% capture cur_cat %}{{p.category}}{% endcapture %}
+        {% if cur_cat != cat %}
+            {% unless forloop.first %}</ul>{% endunless %}
+            {% for m in site.pages %}{% if m.main and m.category == cur_cat %}
+            <h3><a href="{{m.url}}"><img src="{{m.image}}">{{cur_cat}}</a></h3>
+            {% endif %}{% endfor %}
+            {% capture cat %}{{cur_cat}}{% endcapture %}
+        {% endif %}
+        <li><a href="{{p.url}}"><img src="{{p.image}}"> {{p.title}}</a></li>
+        <!-- {{p|jsonify}} -->
+    {% endif %}
+{% endfor %}

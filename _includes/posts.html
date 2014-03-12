@@ -1,0 +1,8 @@
+<h3> Web Log </h3>
+
+<ul>
+{% for post in site.posts %}
+<li>{{ post.date | date_to_string }} 
+    &ndash; <a href="{{post.url}}">{{post.title}}</a></li>
+{% endfor %}
+</ul>
