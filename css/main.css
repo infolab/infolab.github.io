@@ -55,6 +55,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+@font-face {
+  font-family: 'trump town pro';
+  src: url("/font/Trump_Town_Pro-webfont.eot");
+  src: url("/font/Trump_Town_Pro-webfont.eot?#iefix") format("embedded-opentype"), url("/font/Trump_Town_Pro-webfont.woff") format("woff"), url("/font/Trump_Town_Pro-webfont.ttf") format("truetype"), url("/font/Trump_Town_Pro-webfont.svg#trump_town_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
   height: 100%;
 }
@@ -64,20 +72,49 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin-bottom: -36px;
+  margin-bottom: -62px;
 }
 #wrap aside {
-  height: 36px;
+  height: 62px;
 }
 
 footer {
   clear: both;
   position: relative;
-  height: 36px;
+  height: 62px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'trump town pro';
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
 }
 
 body {
   overflow-y: scroll;
+  font-family: oxygen;
 }
 
 #wrap {
@@ -85,27 +122,70 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0 10px;
-  border-style: solid;
-  border-color: #333;
-  border-left-width: 1px;
-  border-right-width: 1px;
 }
 #wrap header {
   margin: 0 -10px;
-  padding: 16px 10px;
+  padding: 16px 0px;
 }
 #wrap header h1 {
-  font-family: 'Oxygen Mono', monospace;
+  padding: 8px 32px 0px;
+  border: 1px solid #333;
+  border-bottom: none;
+}
+#wrap header h1 a {
+  text-decoration: none;
+}
+#wrap header h1 a:hover {
+  text-decoration: underline;
 }
 #wrap header h2 {
-  border-bottom: 1px solid #333;
+  margin-bottom: 16px;
+  padding: 0px 32px 8px;
+  border: 1px solid #333;
+  border-top: none;
+}
+#wrap header nav {
+  border: 1px solid #333;
+}
+#wrap header nav li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#wrap header nav li:first-child a {
+  margin-left: 16px;
+  border-left: 1px solid #333;
+}
+#wrap header nav li:last-child {
+  float: none;
+  display: inline;
+}
+#wrap header nav li a {
+  display: inline-block;
+  padding: 8px 16px;
+  border-right: 1px solid #333;
+  text-decoration: none;
+}
+#wrap header nav li a:hover {
+  background: #DDD;
+}
+#wrap main {
+  width: 648px;
+  min-height: 100%;
+  float: left;
+  border-right: 1px solid #333;
+}
+#wrap aside {
+  width: 300px;
+  float: right;
+  padding-left: 10px;
 }
 
 footer {
   width: 960px;
+  height: 32px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 10px;
-  background: #DDD;
-  color: black;
+  padding: 8px 10px;
+  border: 1px solid #333;
 }

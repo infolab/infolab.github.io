@@ -1,28 +1,71 @@
 body{
     overflow-y: scroll;
+    font-family: oxygen;
 }
 
 #wrap{
     width: 960px;
     margin-left: auto; margin-right: auto;
     padding: 0 10px;
-    border-style: solid; border-color: #333;
-    border-left-width: 1px; border-right-width: 1px;
-
     header{
-        margin: 0 -10px; padding: 16px 10px;
+        margin: 0 -10px; padding: 16px 0px;
         h1{
-            font-family: 'Oxygen Mono', monospace;
+            padding: 8px 32px 0px;
+            border: 1px solid #333;
+            border-bottom: none;
+            a{
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
         }
         h2{
-            border-bottom: 1px solid #333;
+            margin-bottom: 16px; padding: 0px 32px 8px;
+            border: 1px solid #333;
+            border-top: none;
         }
+        nav{
+            border: 1px solid #333;
+            li{
+                float: left;
+                margin: 0; padding: 0;
+                &:first-child a{
+                    margin-left: 16px;
+                    border-left: 1px solid #333;
+                }
+                &:last-child{
+                    float: none;
+                    display: inline;
+                }
+                a{
+                    display: inline-block; 
+                    padding: 8px 16px; 
+                    border-right: 1px solid #333;
+                    text-decoration: none;
+                    &:hover{
+                        background: #DDD;
+                    }
+                }
+            }
+        }
+        // end header
+    }
+    main{
+        width: 648px;
+        min-height: 100%;
+        float: left;
+        border-right: 1px solid #333;
+    }
+    aside{
+        width: 300px;
+        float: right;
+        padding-left: 10px;
     }
 }
 footer{
-    width: 960px;
+    width: 960px; height: 32px;
     margin-left: auto; margin-right: auto;
-    padding: 0 10px; 
-    background: #DDD;
-    color: black;
+    padding: 8px 10px; 
+    border: 1px solid #333;
 }
