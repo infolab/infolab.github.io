@@ -1,0 +1,28 @@
+body{
+    overflow-y: scroll;
+}
+
+#wrap{
+    width: 960px;
+    margin-left: auto; margin-right: auto;
+    padding: 0 10px;
+    border-style: solid; border-color: #333;
+    border-left-width: 1px; border-right-width: 1px;
+
+    header{
+        margin: 0 -10px; padding: 16px 10px;
+        h1{
+            font-family: 'Oxygen Mono', monospace;
+        }
+        h2{
+            border-bottom: 1px solid #333;
+        }
+    }
+}
+footer{
+    width: 960px;
+    margin-left: auto; margin-right: auto;
+    padding: 0 10px; 
+    background: #DDD;
+    color: black;
+}

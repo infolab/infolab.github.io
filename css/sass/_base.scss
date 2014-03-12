@@ -1,0 +1,12 @@
+$break-large: 986px;
+
+@import "compass/reset.scss";
+@import "compass/layout.scss";
+
+@import "responsive";
+
+@import url(http://fonts.googleapis.com/css?family=Oxygen+Mono|Oxygen:400,700);
+
+// Sticky
+@include sticky-footer(36px, "#wrap", "aside", "footer");
+// end sticky
