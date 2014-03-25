@@ -3,9 +3,14 @@ layout: default
 title: Présentation
 ---
 
-MiniSite de l'infolab d'orléans
--------------------------------
+Inscription à l'InfoLab
+-----------------------
 
-Utilise [Sass](http://sass-lang.com) et [Jekyll](http://jekyllrb.com), hébergé
-sur [github](http://github.com).
+Le formulaire pour vous inscrire est ouvert. Il est disponible sur **[la page
+d'adhésion](/adhesion.html)** du minisite.
 
+Locaux
+------
+
+L'InfoLab est situé au premier étage du bâtiment 3IA de la faculté d'informatique
+d'orléans, en salle SR2.

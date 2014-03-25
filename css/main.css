@@ -112,6 +112,14 @@ h6 {
   font-size: 18px;
 }
 
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
 body {
   overflow-y: scroll;
   font-family: oxygen;
